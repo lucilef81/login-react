@@ -27,12 +27,14 @@ const PasswordForm = () => {
           />
           <Input placeholder="Generate new password" type="submit" />
         </form>
-        <Link className="link" to="/register">
-          Create Account /{' '}
-        </Link>
-        <Link className="link" to="/login">
-          Login
-        </Link>
+        <div className="links">
+          <Link className="link" to="/register">
+            Create Account
+          </Link>
+          <Link className="link" to="/login">
+            Login
+          </Link>
+        </div>
       </section>
     </FormStyled>
   );

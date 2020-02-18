@@ -3,6 +3,7 @@ module.exports = {
   primaryHover: '#e17055',
   secondary: '#fdcb6e',
   secondaryHover: '#ffeaa7',
+  link: '#6c5ce7',
   success: '#55efc4',
   successHover: '#00b894',
   danger: '#ff7675',

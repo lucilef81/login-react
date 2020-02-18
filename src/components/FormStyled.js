@@ -72,7 +72,7 @@ const FormStyled = styled.div`
   }
 
   .link:hover {
-    color: ${config.danger};
+    color: ${config.link};
   }
 `;
 
