@@ -1,5 +1,5 @@
 module.exports = {
-  primary: '#b2bec3',
+  primary: '#a29bfe',
   primaryHover: '#e17055',
   secondary: '#fdcb6e',
   secondaryHover: '#ffeaa7',

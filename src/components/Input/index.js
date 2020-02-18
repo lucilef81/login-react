@@ -4,11 +4,7 @@ import PropTypes from 'prop-types';
 const Input = ({ name, type, placeholder, handleChange }) => (
   <>
     {type === 'submit' ? (
-      <input
-        className="button button-success"
-        type={type}
-        value={placeholder}
-      />
+      <input className="form-button" type={type} value={placeholder} />
     ) : (
       <>
         <label htmlFor={name}>{placeholder}</label>

@@ -3,11 +3,11 @@ import config from '../styles/StyledConfig';
 
 const FormStyled = styled.div`
   .form {
-    background-color: transparent;
+    background-color: #fff;
     color: ${config.dark};
     width: 500px;
-    margin: 0 auto;
-    padding-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
   }
 
   .add-form {
@@ -25,23 +25,34 @@ const FormStyled = styled.div`
     margin: 1rem;
   }
 
-  input {
+  .input,
+  .form-button {
     padding: 1rem;
-    border-radius: 0.3rem;
-    border: none;
+    border-radius: 10px;
+    border: 2px solid ${config.primary};
   }
 
-  form .button {
+  label {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+
+  .form-button {
     transition: all 300ms;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1rem;
     text-transform: uppercase;
-    color: ${config.dark};
-    border: 1px solid ${config.dark};
+    color: ${config.primary};
 
     &:hover {
       transition: all 300ms;
-      background-color: ${config.secondaryHover};
+      background-color: ${config.primary};
+      color: #fff;
     }
   }
 
