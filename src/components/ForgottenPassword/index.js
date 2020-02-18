@@ -1,7 +1,9 @@
 import React from 'react';
-import Input from '../Input';
-import FormStyled from '../FormStyled';
 import { Link } from 'react-router-dom';
+
+import Input from '../Input';
+import PageTitle from '../PageTitle';
+import FormStyled from '../FormStyled';
 
 const PasswordForm = () => {
   const handleChange = () => {};
@@ -10,7 +12,7 @@ const PasswordForm = () => {
   return (
     <FormStyled>
       <section className="form">
-        <h2>Forgotten password</h2>
+        <PageTitle title="Forgot password" />
         <form
           onSubmit={handleSubmit}
           className="add-form"

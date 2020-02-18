@@ -1,7 +1,9 @@
 import React from 'react';
 import Input from '../Input';
-import FormStyled from '../FormStyled';
 import { Link } from 'react-router-dom';
+
+import FormStyled from '../FormStyled';
+import PageTitle from '../PageTitle';
 
 const LoginForm = () => {
   const handleChange = () => {};
@@ -10,7 +12,7 @@ const LoginForm = () => {
   return (
     <FormStyled>
       <section className="form">
-        <h2>Login</h2>
+        <PageTitle title="Login" />
         <form
           onSubmit={handleSubmit}
           className="add-form"
@@ -32,12 +34,14 @@ const LoginForm = () => {
 
           <Input placeholder="Login" type="submit" />
         </form>
-        <Link className="link" to="/register">
-          Create Account /{' '}
-        </Link>
-        <Link className="link" to="/password">
-          Forgot password
-        </Link>
+        <div className="links">
+          <Link className="link" to="/register">
+            Don't have an account yet ? Register here.
+          </Link>
+          <Link className="link" to="/password">
+            Forgot password
+          </Link>
+        </div>
       </section>
     </FormStyled>
   );

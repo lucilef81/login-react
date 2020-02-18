@@ -16,6 +16,9 @@ const App = () => (
         <Route exact path="/register" component={RegisterForm} />
         <Route exact path="/login" component={LoginForm} />
         <Route exact path="/password" component={PasswordForm} />
+        <Route>
+          <h2>Page not found</h2>
+        </Route>
       </Switch>
     </Router>
   </div>

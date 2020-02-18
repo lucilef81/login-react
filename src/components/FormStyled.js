@@ -45,14 +45,19 @@ const FormStyled = styled.div`
     }
   }
 
-  h2 {
+  .page-title {
     font-size: 2rem;
     font-weight: bold;
   }
 
-  h2,
+  .page-title,
   .link {
     color: ${config.dark};
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
   }
 
   .link:hover {
