@@ -1,6 +1,11 @@
 // == Import npm
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 
 // == Import
 import './styles.css';
@@ -16,9 +21,7 @@ const App = () => (
         <Route exact path="/register" component={RegisterForm} />
         <Route exact path="/login" component={LoginForm} />
         <Route exact path="/password" component={PasswordForm} />
-        <Route>
-          <h2>Page not found</h2>
-        </Route>
+        <Redirect to="/login" />
       </Switch>
     </Router>
   </div>
